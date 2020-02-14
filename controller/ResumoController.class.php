@@ -263,7 +263,7 @@ class ResumoController{
 							<div>
 								<div style="width: 50%">
 									<a href="cad_resumo.php?id=<?= $rs['id']; ?>">
-										<i class="fa fa-search" style=""></i>
+										<i class="fa fa-search"></i>
 
 									</a>
 								</div>
