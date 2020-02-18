@@ -138,7 +138,6 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
         </div>
           <script type="text/javascript">
             $('#sbmt').click(function() { 
-            
           }); 
           </script>
     </div>
