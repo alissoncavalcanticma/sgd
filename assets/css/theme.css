@@ -13473,6 +13473,10 @@ section {
     box-sizing: border-box;
 }
 
+.dt3_cap {
+    text-transform: uppercase;
+}
+
 .dt3 thead tr th:last-child {
     text-align: inherit;
     padding-right: 20px;
