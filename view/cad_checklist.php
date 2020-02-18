@@ -78,7 +78,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
                             </div>
                         </div>
                   <div class="row m-t-30" style="margin-top: 10px;">
-                      <div class="col-md-12">
+                      <div class="col-md-12" style="padding-right:2px; padding-left:2px">
                           <!-- DATA TABLE-->
                           <div class="table-responsive m-b-40">
                                     
