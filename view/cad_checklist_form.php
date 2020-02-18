@@ -116,7 +116,7 @@
                                                             <div class="col-md-2 table-bordered">
                                                                 <div class="">
 
-                                                                    <select tabindex="5" id="operador_sp" name="operador_sp" class="form-control input-format-center" required oninvalid="setCustomValidity('Selecione um operador')" onchange="try{setCustomValidity('')}catch(e){}">
+                                                                    <select tabindex="6" id="operador_sp" name="operador_sp" class="form-control input-format-center" required oninvalid="setCustomValidity('Selecione um operador')" onchange="try{setCustomValidity('')}catch(e){}">
                                                                         <option value=""></option>
                                                         
                                                                         <?php 
@@ -154,7 +154,7 @@
                                                             <div class="col-md-2 table-bordered">
                                                                 <div class="">
 
-                                                                    <select tabindex="8" id="operador_dr" name="operador_dr" class="form-control input-format-center" required oninvalid="setCustomValidity('Selecione um operador')" onchange="try{setCustomValidity('')}catch(e){}">
+                                                                    <select tabindex="10" id="operador_dr" name="operador_dr" class="form-control input-format-center" required oninvalid="setCustomValidity('Selecione um operador')" onchange="try{setCustomValidity('')}catch(e){}">
                                                                         <option value=""></option>
                                                         
                                                                         <?php 
@@ -192,7 +192,7 @@
                                                             <div class="col-md-2 table-bordered">
                                                                 <div class="">
 
-                                                                    <select tabindex="11" id="operador_tr" name="operador_tr" class="form-control input-format-center" required oninvalid="setCustomValidity('Selecione um operador')" onchange="try{setCustomValidity('')}catch(e){}">
+                                                                    <select tabindex="14" id="operador_tr" name="operador_tr" class="form-control input-format-center" required oninvalid="setCustomValidity('Selecione um operador')" onchange="try{setCustomValidity('')}catch(e){}">
                                                                         <option value=""></option>
                                                         
                                                                         <?php 
@@ -248,11 +248,11 @@
                                                             <div class="col-md-2 table-bordered" style="padding-left: 2px; padding-right: 2px;">
                                                                 <div style="width: 50%; float: left; text-align: center">
                                                                     <label style="font-size: 13px">Entrada:</label>
-                                                                    <input tabindex="6" name="entrada_sp" type="time" class="form-control time-adjust input-format-center" value="<?= isset($id) ? $chk['entrada_sp'] : '' ?>" required oninvalid="setCustomValidity('Insira a hora de entrada')" onchange="try{setCustomValidity('')}catch(e){}">
+                                                                    <input tabindex="7" name="entrada_sp" type="time" class="form-control time-adjust input-format-center" value="<?= isset($id) ? $chk['entrada_sp'] : '' ?>" required oninvalid="setCustomValidity('Insira a hora de entrada')" onchange="try{setCustomValidity('')}catch(e){}">
                                                                 </div>
                                                                 <div style="width: 50%; float: right; text-align: center">
                                                                     <label style="font-size: 13px">Saída:</label>
-                                                                    <input tabindex="7" name="saida_sp" type="time" class="form-control time-adjust input-format-center" value="<?= isset($id) ? $chk['saida_sp'] : '' ?>" required oninvalid="setCustomValidity('Insira a hora de saída')" onchange="try{setCustomValidity('')}catch(e){}">
+                                                                    <input tabindex="8" name="saida_sp" type="time" class="form-control time-adjust input-format-center" value="<?= isset($id) ? $chk['saida_sp'] : '' ?>" required oninvalid="setCustomValidity('Insira a hora de saída')" onchange="try{setCustomValidity('')}catch(e){}">
                                                                 </div>
                                                             </div>
                                                             <!-- END HORA SP -->
@@ -260,11 +260,11 @@
                                                             <div class="col-md-2 table-bordered" style="padding-left: 2px; padding-right: 2px;">
                                                                 <div style="width: 50%; float: left; text-align: center">
                                                                     <label style="font-size: 13px">Entrada:</label>
-                                                                    <input tabindex="9" name="entrada_dr" type="time" class="form-control time-adjust input-format-center" value="<?= isset($id) ? $chk['entrada_dr'] : '' ?>" required oninvalid="setCustomValidity('Insira a hora de entrada')" onchange="try{setCustomValidity('')}catch(e){}">
+                                                                    <input tabindex="11" name="entrada_dr" type="time" class="form-control time-adjust input-format-center" value="<?= isset($id) ? $chk['entrada_dr'] : '' ?>" required oninvalid="setCustomValidity('Insira a hora de entrada')" onchange="try{setCustomValidity('')}catch(e){}">
                                                                 </div>
                                                                 <div style="width: 50%; float: right; text-align: center">
                                                                     <label style="font-size: 13px">Saída:</label>
-                                                                    <input tabindex="10" name="saida_dr" type="time" class="form-control time-adjust input-format-center" value="<?= isset($id) ? $chk['saida_dr'] : '' ?>" required oninvalid="setCustomValidity('Insira a hora de saída')" onchange="try{setCustomValidity('')}catch(e){}">
+                                                                    <input tabindex="12" name="saida_dr" type="time" class="form-control time-adjust input-format-center" value="<?= isset($id) ? $chk['saida_dr'] : '' ?>" required oninvalid="setCustomValidity('Insira a hora de saída')" onchange="try{setCustomValidity('')}catch(e){}">
                                                                 </div>
                                                             </div>
                                                             <!-- END HORA DR -->
@@ -272,11 +272,11 @@
                                                             <div class="col-md-2 table-bordered" style="padding-left: 2px; padding-right: 2px;">
                                                                 <div style="width: 50%; float: left; text-align: center">
                                                                     <label style="font-size: 13px">Entrada:</label>
-                                                                    <input tabindex="12" name="entrada_tr" type="time" class="form-control time-adjust input-format-center" value="<?= isset($id) ? $chk['entrada_tr'] : '' ?>" required oninvalid="setCustomValidity('Insira a hora de entrada')" onchange="try{setCustomValidity('')}catch(e){}">
+                                                                    <input tabindex="15" name="entrada_tr" type="time" class="form-control time-adjust input-format-center" value="<?= isset($id) ? $chk['entrada_tr'] : '' ?>" required oninvalid="setCustomValidity('Insira a hora de entrada')" onchange="try{setCustomValidity('')}catch(e){}">
                                                                 </div>
                                                                 <div style="width: 50%; float: right; text-align: center">
                                                                     <label style="font-size: 13px">Saída:</label>
-                                                                    <input tabindex="13" name="saida_tr" type="time" class="form-control time-adjust input-format-center" value="<?= isset($id) ? $chk['saida_tr'] : '' ?>" required oninvalid="setCustomValidity('Insira a hora de saída')" onchange="try{setCustomValidity('')}catch(e){}">
+                                                                    <input tabindex="16" name="saida_tr" type="time" class="form-control time-adjust input-format-center" value="<?= isset($id) ? $chk['saida_tr'] : '' ?>" required oninvalid="setCustomValidity('Insira a hora de saída')" onchange="try{setCustomValidity('')}catch(e){}">
                                                                 </div>
                                                             </div>
                                                             <!-- END HORA TR -->
@@ -610,13 +610,13 @@
                                                                 <!-- TEMPERATURA FCA 01  -->
                                                                 <div style="width: 50%; float: left">
                                                                     
-                                                                    <input tabindex="14" tabindex="" name="temp01_fca" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['temp01_fca'] : '' ?>" required oninvalid="setCustomValidity('Insira a temperatura 01 FCA')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
+                                                                    <input tabindex="5" name="temp01_fca" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['temp01_fca'] : '' ?>" required oninvalid="setCustomValidity('Insira a temperatura 01 FCA')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
                                                                 </div>
                                                                 <!-- END TEMPERATURA FCA 01  -->
                                                                 <!-- HUMIDADE FCA 01  -->
                                                                 <div style="width: 50%; float: right">
 
-                                                                    <input tabindex="15" name="humid01_fca" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['humid01_fca'] : '' ?>"  required oninvalid="setCustomValidity('Insira a humidade 01 FCA')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
+                                                                    <input tabindex="5" name="humid01_fca" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['humid01_fca'] : '' ?>"  required oninvalid="setCustomValidity('Insira a humidade 01 FCA')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
                                                                 </div>
                                                                 <!-- END HUMIDADE FCA 01 -->
                                                             </div>
@@ -625,13 +625,13 @@
                                                                 <!-- TEMPERATURA SP 01  -->
                                                                 <div style="width: 50%; float: left">
                                                                     
-                                                                    <input tabindex="20" name="temp01_sp" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['temp01_sp'] : '' ?>" required oninvalid="setCustomValidity('Insira a temperatura 01 SP')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
+                                                                    <input tabindex="9" name="temp01_sp" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['temp01_sp'] : '' ?>" required oninvalid="setCustomValidity('Insira a temperatura 01 SP')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
                                                                 </div>
                                                                 <!-- END TEMPERATURA SP 01  -->
                                                                 <!-- HUMIDADE SP 01  -->
                                                                 <div style="width: 50%; float: right">
                                                                     
-                                                                    <input tabindex="21" name="humid01_sp" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['humid01_sp'] : '' ?>" required oninvalid="setCustomValidity('Insira a humidade 01 SP')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
+                                                                    <input tabindex="9" name="humid01_sp" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['humid01_sp'] : '' ?>" required oninvalid="setCustomValidity('Insira a humidade 01 SP')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
                                                                 </div>
                                                                 <!-- END HUMIDADE SP 01  -->
                                                             </div>
@@ -640,13 +640,13 @@
                                                                 <!-- TEMPERATURA DR 01 -->
                                                                 <div style="width: 50%; float: left">
                                                                     
-                                                                    <input tabindex="26" name="temp_dr" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['temp_dr'] : '' ?>" required oninvalid="setCustomValidity('Insira a temperatura DR')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
+                                                                    <input tabindex="13" name="temp_dr" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['temp_dr'] : '' ?>" required oninvalid="setCustomValidity('Insira a temperatura DR')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
                                                                 </div>
                                                                 <!-- END TEMPERATURA DR 01 -->
                                                                 <!-- HUMIDADE DR 01 -->
                                                                 <div style="width: 50%; float: right">
                                                                     
-                                                                    <input tabindex="27" name="humid_dr" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['humid_dr'] : '' ?>" required oninvalid="setCustomValidity('Insira a humidade DR')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
+                                                                    <input tabindex="13" name="humid_dr" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['humid_dr'] : '' ?>" required oninvalid="setCustomValidity('Insira a humidade DR')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
                                                                 </div>
                                                                 <!-- END HUMIDADE DR 01 -->
                                                             </div>
@@ -678,13 +678,13 @@
                                                                 <!-- TEMPERATURA FCA 02  -->
                                                                 <div style="width: 50%; float: left">
                                                                     
-                                                                    <input tabindex="16" name="temp02_fca" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['temp02_fca'] : '' ?>" required oninvalid="setCustomValidity('Insira a temperatura 02 FCA')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
+                                                                    <input tabindex="5" name="temp02_fca" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['temp02_fca'] : '' ?>" required oninvalid="setCustomValidity('Insira a temperatura 02 FCA')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
                                                                 </div>
                                                                 <!-- END TEMPERATURA FCA 02  -->
                                                                 <!-- HUMIDADE FCA 02  -->
                                                                 <div style="width: 50%; float: right">
 
-                                                                    <input tabindex="17" name="humid02_fca" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['humid02_fca'] : '' ?>" required oninvalid="setCustomValidity('Insira a humidade 02 FCA')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
+                                                                    <input tabindex="5" name="humid02_fca" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['humid02_fca'] : '' ?>" required oninvalid="setCustomValidity('Insira a humidade 02 FCA')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
                                                                 </div>
                                                                 <!-- END HUMIDADE FCA 02 -->
                                                             </div>
@@ -693,13 +693,13 @@
                                                                 <!-- TEMPERATURA SP 02 -->
                                                                 <div style="width: 50%; float: left">
                                                                     
-                                                                    <input tabindex="22" name="temp02_sp" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['temp02_sp'] : '' ?>" required oninvalid="setCustomValidity('Insira a temperatura 02 SP')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
+                                                                    <input tabindex="9" name="temp02_sp" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['temp02_sp'] : '' ?>" required oninvalid="setCustomValidity('Insira a temperatura 02 SP')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
                                                                 </div>
                                                                 <!-- END TEMPERATURA SP 02  -->
                                                                 <!-- HUMIDADE SP 02 -->
                                                                 <div style="width: 50%; float: right">
                                                                     
-                                                                    <input tabindex="23" name="humid02_sp" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['humid02_sp'] : '' ?>" required oninvalid="setCustomValidity('Insira a humidade 02 SP')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
+                                                                    <input tabindex="9" name="humid02_sp" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['humid02_sp'] : '' ?>" required oninvalid="setCustomValidity('Insira a humidade 02 SP')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
                                                                 </div>
                                                                 <!-- END HUMIDADE SP 02  -->
                                                             </div>
@@ -743,13 +743,13 @@
                                                                 <!-- TEMPERATURA FCA 03  -->
                                                                 <div style="width: 50%; float: left">
                                                                     
-                                                                    <input tabindex="18" name="temp03_fca" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['temp03_fca'] : '' ?>" required oninvalid="setCustomValidity('Insira a temperatura 03 FCA')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
+                                                                    <input tabindex="5" name="temp03_fca" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['temp03_fca'] : '' ?>" required oninvalid="setCustomValidity('Insira a temperatura 03 FCA')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
                                                                 </div>
                                                                 <!-- END TEMPERATURA FCA 03  -->
                                                                 <!-- HUMIDADE FCA 03 -->
                                                                 <div style="width: 50%; float: right">
 
-                                                                    <input tabindex="19" name="humid03_fca" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['humid03_fca'] : '' ?>" required oninvalid="setCustomValidity('Insira a humidade 03 FCA')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
+                                                                    <input tabindex="5" name="humid03_fca" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['humid03_fca'] : '' ?>" required oninvalid="setCustomValidity('Insira a humidade 03 FCA')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
                                                                 </div>
                                                                 <!-- END HUMIDADE FCA 03 -->
                                                             </div>
@@ -758,13 +758,13 @@
                                                                 <!-- TEMPERATURA SP 03 -->
                                                                 <div style="width: 50%; float: left">
                                                                     
-                                                                    <input tabindex="24" name="temp03_sp" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['temp03_sp'] : '' ?>" required oninvalid="setCustomValidity('Insira a temperatura 03 SP')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
+                                                                    <input tabindex="9" name="temp03_sp" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['temp03_sp'] : '' ?>" required oninvalid="setCustomValidity('Insira a temperatura 03 SP')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
                                                                 </div>
                                                                 <!-- END TEMPERATURA SP 03  -->
                                                                 <!-- HUMIDADE SP 03 -->
                                                                 <div style="width: 50%; float: right">
                                                                     
-                                                                    <input tabindex="25" name="humid03_sp" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['humid03_sp'] : '' ?>" required oninvalid="setCustomValidity('Insira a humidade 03 SP')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
+                                                                    <input tabindex="9" name="humid03_sp" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['humid03_sp'] : '' ?>" required oninvalid="setCustomValidity('Insira a humidade 03 SP')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar2(this); return numerico2(event);">
                                                                 </div>
                                                                 <!-- END HUMIDADE SP 03 -->
                                                             </div>
@@ -823,7 +823,7 @@
                                                                 <div class="input-format-center">
                                                                     <div style="width: 80%; margin:auto">
                                                                     
-                                                                        <input tabindex="28" name="cap_ups_tr" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['cap_ups_tr'] : '' ?>" required oninvalid="setCustomValidity('Insira a capacidade da UPS da TR')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar(this); return numerico(event);" min="0" max="100">
+                                                                        <input tabindex="17" name="cap_ups_tr" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['cap_ups_tr'] : '' ?>" required oninvalid="setCustomValidity('Insira a capacidade da UPS da TR')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar(this); return numerico(event);" min="0" max="100">
 
                                                                     </div>
                                                                 </div>
@@ -1074,7 +1074,7 @@
 
                                                         <div class="row table-bordered">
 
-                                                                <textarea tabindex="29" name="obs_fca" id="textarea-input" placeholder="Detalhamento das observações de checklist do DC FCA" class="form-control form-control-textarea" style="width: 100%" ><?= $chk['obs_fca']; ?></textarea>
+                                                                <textarea tabindex="18" name="obs_fca" id="textarea-input" placeholder="Detalhamento das observações de checklist do DC FCA" class="form-control form-control-textarea" style="width: 100%" ><?= $chk['obs_fca']; ?></textarea>
                                                         </div>
                                                         <!-- END OBS CHECKLIST FCA -->
                                                         <!-- OBS CHECKLIST SP -->
@@ -1084,7 +1084,7 @@
 
                                                         <div class="row table-bordered">
 
-                                                                <textarea tabindex="30" name="obs_sp" id="textarea-input" placeholder="Detalhamento das observações de checklist do DC SP" class="form-control form-control-textarea" style="width: 100%"><?= $chk['obs_sp']; ?></textarea>
+                                                                <textarea tabindex="18" name="obs_sp" id="textarea-input" placeholder="Detalhamento das observações de checklist do DC SP" class="form-control form-control-textarea" style="width: 100%"><?= $chk['obs_sp']; ?></textarea>
                                                         </div>
                                                         <!-- END OBS CHECKLIST SP -->
                                                         <!-- OBS CHECKLIST DR -->
@@ -1094,7 +1094,7 @@
 
                                                         <div class="row table-bordered">
 
-                                                                <textarea tabindex="31" name="obs_dr" id="textarea-input" placeholder="Detalhamento das observações de checklist do DC DR" class="form-control form-control-textarea" style="width: 100%"><?= $chk['obs_dr']; ?></textarea>
+                                                                <textarea tabindex="18" name="obs_dr" id="textarea-input" placeholder="Detalhamento das observações de checklist do DC DR" class="form-control form-control-textarea" style="width: 100%"><?= $chk['obs_dr']; ?></textarea>
                                                         </div>
                                                         <!-- END OBS CHECKLIST DR -->
                                                         <!-- OBS CHECKLIST TR -->
@@ -1104,7 +1104,7 @@
 
                                                         <div class="row table-bordered">
 
-                                                                <textarea tabindex="32" name="obs_tr" id="textarea-input" placeholder="Detalhamento das observações de checklist da Sala Técnica" class="form-control form-control-textarea" style="width: 100%;"><?= $chk['obs_tr']; ?></textarea>
+                                                                <textarea tabindex="18" name="obs_tr" id="textarea-input" placeholder="Detalhamento das observações de checklist da Sala Técnica" class="form-control form-control-textarea" style="width: 100%;"><?= $chk['obs_tr']; ?></textarea>
                                                         </div>
                                                         <!-- END OBS CHECKLIST TR -->
                                                         <!-- END OBS CHECKLIST -->
@@ -1181,7 +1181,7 @@
                                                                 <div class="input-format-center">
                                                                     <div style="width: 25%; margin:auto; padding: 5px">
                                                                     
-                                                                    <input tabindex="32" name="chk_batcel" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['chk_batcel'] : "" ?>" required oninvalid="setCustomValidity('Insira a % da bateria do celular')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar(this); return numerico(event);" min="0" max="100">
+                                                                    <input tabindex="19" name="chk_batcel" type="number" class="form-control input-format-center" value="<?= isset($id) ? $chk['chk_batcel'] : "" ?>" required oninvalid="setCustomValidity('Insira a % da bateria do celular')" onchange="try{setCustomValidity('')}catch(e){}" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" onkeypress="validar(this); return numerico(event);" min="0" max="100">
 
                                                                     </div>
                                                                 </div>
@@ -1194,7 +1194,7 @@
                                                         </div>
                                                         <div class="row table-bordered">
 
-                                                                <textarea tabindex="33" name="obs_npo" id="textarea-input" placeholder="Detalhamento das observações NPO" class="form-control form-control-textarea" style="width: 100%"><?= $chk['obs_npo']; ?></textarea>
+                                                                <textarea tabindex="20" name="obs_npo" id="textarea-input" placeholder="Detalhamento das observações NPO" class="form-control form-control-textarea" style="width: 100%"><?= $chk['obs_npo']; ?></textarea>
                                                         </div>
                                                         <!-- END OBS CHECKLIST NPO -->
                                                         
@@ -1206,7 +1206,7 @@
                                                         <hr>
                                                         <div class="row">
                                                             <div class="form-part form-part-button-form" style="padding-bottom: 40px; clear:both; width: 100%;">
-                                                                <button tabindex="34" type="submit" class="btn btn-success" id="sbmt" onclick="myFunction()">
+                                                                <button tabindex="21" type="submit" class="btn btn-success" id="sbmt" onclick="myFunction()">
                                                                     <?= !isset($id) ? "Salvar" : "Editar" ?>
                                                                 </button>
                                                             </div>
