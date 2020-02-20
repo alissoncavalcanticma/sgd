@@ -139,7 +139,7 @@ class AcessoController{
 								<div>
 				                       <div style="float: left; width: 50%">
 				                            <!--<a href="cad_acesso.php?id=<?= $ac['id']; ?>">-->
-				                                <a href="#" onClick="window.open('resumoAcesso.php?id=<?= $ac['id']; ?>','Janela','toolbar=no,location=yes,directories=no,status=yes,menubar=no,scrollbars=yes,resizable=no,fullscreen=no,width=650,height=400,left=260,top=150'); return false;"><i class="fa fa-share-square"></i>
+				                                <a href="#" onClick="window.open('exportAcesso.php?id=<?= $ac['id']; ?>','Janela','toolbar=no,location=yes,directories=no,status=yes,menubar=no,scrollbars=yes,resizable=no,fullscreen=no,width=650,height=400,left=260,top=150'); return false;"><i class="fa fa-share-square"></i>
 				                                </a>
 
 				                        </div>
@@ -263,7 +263,7 @@ class AcessoController{
 								<div>
 				                       <div style="float: left; width: 50%">
 				                            <!--<a href="cad_acesso.php?id=<?= $ac['id']; ?>">-->
-				                                <a href="#" onClick="window.open('resumoAcesso.php?id=<?= $ac['id']; ?>','Janela','toolbar=no,location=yes,directories=no,status=yes,menubar=no,scrollbars=yes,resizable=no,fullscreen=no,width=650,height=400,left=260,top=150'); return false;"><i class="fa fa-share-square"></i>
+				                                <a href="#" onClick="window.open('exportAcesso.php?id=<?= $ac['id']; ?>','Janela','toolbar=no,location=yes,directories=no,status=yes,menubar=no,scrollbars=yes,resizable=no,fullscreen=no,width=650,height=400,left=260,top=150'); return false;"><i class="fa fa-share-square"></i>
 				                                </a>
 
 				                        </div>
