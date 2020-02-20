@@ -145,7 +145,7 @@ class AcessoController{
 				                        </div>
 				                        <div style="float: right; width: 50%">
 				                            <a href="cad_acesso.php?id=<?= $ac['id']; ?>">
-				                                 <i class="fa fa-search" style=""></i>
+				                                 <i class="fa fa-search"></i>
 
 				                            </a>
 				                        </div>
@@ -269,7 +269,7 @@ class AcessoController{
 				                        </div>
 				                        <div style="float: right; width: 50%">
 				                            <a href="cad_acesso.php?id=<?= $ac['id']; ?>">
-				                                 <i class="fa fa-search" style=""></i>
+				                                 <i class="fa fa-search"></i>
 
 				                            </a>
 				                        </div>
