@@ -147,9 +147,10 @@ class ResumoController{
 							<div>
 								<div style="float: left; width: 50%">
 				                            <!--<a href="cad_acesso.php?id=<?= $rs['id']; ?>">-->
-				                                <a href="#" onClick="window.open('exportResumo.php?id=<?= $rs['id']; ?>','Janela','toolbar=no,location=yes,directories=no,status=yes,menubar=no,scrollbars=yes,resizable=no,fullscreen=no,width=650,height=400,left=260,top=150'); return false;"><i class="fa fa-share-square"></i>
-				                                </a>
-
+				                                <!--<a href="#" onClick="window.open('exportResumo.php?id=<?= $rs['id']; ?>','Janela','toolbar=no,location=yes,directories=no,status=yes,menubar=no,scrollbars=yes,resizable=no,fullscreen=no,width=650,height=400,left=260,top=150'); return false;"><i class="fa fa-share-square"></i>
+												</a>-->
+												<a href="#" name="bt_excluir" value="EXCLUIR" onclick="btExcluir()">OK</i>
+												</a>
 				                </div>
 								<div style="float: right; width: 50%">
 									<a href="cad_resumo.php?id=<?= $rs['id']; ?>">

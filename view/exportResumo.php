@@ -4,8 +4,8 @@ require_once '../autoload.php';
 
 if (isset($_GET['id']) && !empty($_GET['id'])) {
   $id = $_GET['id'];
-  $acessoC = new AcessoController();
-  $ac = $acessoC->retornaAcesso($id);
+  $resumoC = new ResumoController();
+  $rs = $resumoC->retornaResumo($id);
   $userC = new UsuarioController();
 }
 
@@ -31,52 +31,26 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
                 <br>
                 <table id="minha-tabela">
                     <thead>
-                        <th>ID</th>
-                        <th>DC</th>
-                        <th>Operador</th>
-                        <th>Solicitante</th>
-                        <th>Empresa</th>
-                        <th>Data</th>
-                        <th>Entrada</th>
-                        <th>Saída</th>
-                        
+                        <th>Resumo do turno: </th>
                     </thead>
                     <tbody>
-                        <td><?= $ac['id'] ?></td>
-                        <td><?= $ac['dc'] ?></td>
                         <td>
-                            <?php
-                                $uc = $userC->retornaApelido($ac['operador']);
-                                echo $uc['apelido']; 
-                            ?>
-                        </td>
-                        <td><?= $ac['solicitante'] ?></td>
-                        <td><?= $ac['empresa'] ?></td>
-                        <td>
-                            <?php 
-                                    $dt = array_reverse(explode('-', $ac['data']));
-                                    $dt = implode('/', $dt);
-                                    echo $dt; 
-
-                            ?>
-                            
-                        </td>
-                        <td><?= $ac['entrada'] ?></td>
-                        <td><?= $ac['saida'] ?></td>
+                        Data:       <?php 
+                                        $dt = array_reverse(explode('-', $rs['data']));
+                                        $dt = implode('/', $dt);
+                                        echo $dt;  
+                                    ?>, 
+                        Turno:      <?= $rs['turno'] ?>, 
+                        Operador:   <?php
+                                        $uc = $userC->retornaApelido($rs['operador']);
+                                        echo $uc['apelido']; 
+                                    ?>
+                        <br />
+                        <br />
+                        <?= $rs['resumo'] ?>, 
                         
-                    </tbody>
-                    <thead>
-                        <th colspan="4">Motivo</th>
-                        <th>Serviço</th>
-                        <th>Equipamento</th>
-                        <th colspan="2">Observação</th>
-                       
-                    </thead>
-                    <tbody>
-                        <td colspan="4"><?= $ac['motivo'] ?></td>
-                        <td><?= $ac['servico'] ?></td>
-                        <td><?= $ac['equipamento'] ?></td>
-                        <td colspan="2"><?= $ac['obs'] ?></td>
+                        Quem assumiu o turno: Matheus e Cleiton    
+                        
                     </tbody>
                 </table>
              
