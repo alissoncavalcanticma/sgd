@@ -217,7 +217,7 @@ class ChecklistController{
 							<th style="min-width:180px">OBS DC DR</th>
 							<th style="min-width:180px">OBS Sala Técnica</th>
 							<th style="min-width:130px">OBS NPO</th>
-							<th>View</th>
+							<th>Actions</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -380,7 +380,7 @@ class ChecklistController{
 							<th>OBS DC SP</th>
 							<th>OBS Sala Técnica</th>
 							<th>OBS NPO</th>
-							<th>View</th>
+							<th style="text-align: center">Actions</th>
 						</tr>
 					</thead>
 					<tbody>

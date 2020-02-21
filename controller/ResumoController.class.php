@@ -145,7 +145,12 @@ class ResumoController{
 
 						<td style="margin:2px; padding-left: 5px; padding-right: 10px">
 							<div>
-								<div style="padding-left:30%; padding-right:30%">
+								<div style="float: left; width: 50%">
+				                    <a href="#" onClick="window.open('exportResumo.php?id=<?= $rs['id']; ?>','Janela','toolbar=no,location=yes,directories=no,status=yes,menubar=no,scrollbars=yes,resizable=no,fullscreen=no,width=650,height=400,left=260,top=150'); return false;">
+										<i class="fa fa-share-square"></i>
+									</a>
+				                </div>
+								<div style="float: right; width: 50%">
 									<a href="cad_resumo.php?id=<?= $rs['id']; ?>">
 										<i class="fa fa-search"></i>
 
@@ -261,7 +266,13 @@ class ResumoController{
 
 						<td style="margin:2px; padding-left: 5px; padding-right: 10px">
 							<div>
-								<div style="width: 50%">
+								<div style="float: left; width: 50%">
+				                            <!--<a href="cad_acesso.php?id=<?= $rs['id']; ?>">-->
+				                                <a href="#" onClick="window.open('exportResumo.php?id=<?= $rs['id']; ?>','Janela','toolbar=no,location=yes,directories=no,status=yes,menubar=no,scrollbars=yes,resizable=no,fullscreen=no,width=650,height=400,left=260,top=150'); return false;"><i class="fa fa-share-square"></i>
+				                                </a>
+
+				                </div>
+								<div style="float: right; width: 50%">
 									<a href="cad_resumo.php?id=<?= $rs['id']; ?>">
 										<i class="fa fa-search"></i>
 
