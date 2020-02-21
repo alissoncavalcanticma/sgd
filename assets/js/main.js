@@ -1725,13 +1725,3 @@ function numerico2(evt) {
 }
 
 //END Função de controle de quantidade 2 e tipo de caracteres em inpunt number
-
-//function exportResumo(){
-//  var pOperador = 
-//}
-
-function btExcluir() {
-    var id;
-    id = prompt("Qual ID você deseja excluir ?");
-
-}
