@@ -220,7 +220,23 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
                                                                     class="form-control form-control-textarea" 
                                                                     style="width: 100%"
                                                                   
-                                                                 ><?= isset($rsm['resumo']) ? $rsm['resumo'] : "" ?></textarea>
+                                                                 ><?= isset($rsm['resumo']) ? $rsm['resumo'] : "
+                                                                 
+                                                                        <p><span style='font-size:12px'><strong><u> >> Acessos: </u></strong></span></p>
+                                                                        <p><span style='font-size:11px'>N&atilde;o houveram acessos neste turno.</span></p>
+                                                                        <p>------------------------------------------------------------</p>
+                                                                        <p><span style='font-size:12px'><strong><u> >> Checklist:</u></strong></span></p>
+                                                                        <p><span style='font-size:11px'>Observa&ccedil;&otilde;es anteriores permanecem</span></p>
+                                                                        <p>------------------------------------------------------------</p>
+                                                                        <p><span style='font-size:12px'><strong><u> >> Alertas (ZABBIX): </u></strong></span></p>
+                                                                        <p><span style='font-size:11px'>&nbsp;- 0 e-mail enviado(s) com 0 alerta(s);&nbsp; </span></p>
+                                                                        <p><span style='font-size:11px'>&nbsp;- 0 Alerta(s) ativo(s);&nbsp; </span></p>
+                                                                        <p><span style='font-size:11px'>&nbsp;- 0 Alerta(s) resolvido(s).&nbsp; </span></p>
+                                                                        <p>------------------------------------------------------------</p>
+                                                                        <p><span style='font-size:12px'><strong><u> >> Observa&ccedil;&otilde;es: </u></strong></span></p>
+                                                                        <p><span style='font-size:11px'><strong>N/A</strong></span></p>   
+
+                                                                 " ?></textarea>
                                                         </div>
                                                         <?php 
                                                             

@@ -1,4 +1,16 @@
+<script type="text/javascript">
+    
+    var pTurno;
+    pTurno = prompt("Quem assumiu o turno?");
+    if(pTurno === null || pTurno === ""){
+        window.close();
+    }
+
+</script>
+
 <?php
+
+$pTurno = "<script type='text/javascript'>document.write(pTurno)</script>";
 
 require_once '../autoload.php';
 
@@ -31,86 +43,28 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
                 <br>
                 <table id="minha-tabela">
                     <thead>
-                        <th>Resumo do turno: </th>
+                        <th>*Resumo do turno*: </th>
                     </thead>
                     <tbody>
                         <td>
-                        Data:       <?php 
+                        <br />*<b><span style="font-size: 12px">Data</span></b>*:       <?php 
                                         $dt = array_reverse(explode('-', $rs['data']));
                                         $dt = implode('/', $dt);
                                         echo $dt;  
                                     ?>, 
-                        Turno:      <?= $rs['turno'] ?>, 
-                        Operador:   <?php
+                        *<b><span style="font-size: 12px">Turno</span></b>*:      <?= $rs['turno'] ?>, 
+                        *<b><span style="font-size: 12px">Operador</span></b>*:   <?php
                                         $uc = $userC->retornaApelido($rs['operador']);
                                         echo $uc['apelido']; 
                                     ?>
                         <br />
                         <br />
-                        <?= $rs['resumo'] ?>, 
-                        
-                        Quem assumiu o turno: Matheus e Cleiton    
+                        <?= $rs['resumo'] ?>
+                        <br />
+                        *<b>Quem assumiu o turno</b>*:<br /><?= $pTurno; ?> 
                         
                     </tbody>
                 </table>
-             
-                <!--
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h5"><strong>Resumo de acesso, id, dc, solicitante, empresa, motivo, serviço, equipamento, observação, data, agendamento, entrada, saida</strong></h5>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="col-md-10" style="margin: auto">
-                        <div class="col-md-2 input-ra" style="float: left; width: 10%">
-                            <label class="">ID</label>
-                            <input type="text" class="form-control form-control-sm" value="<?= $dc ?>">
-                        </div>
-                        <div class="col-md-2  input-ra" style="float: left; width: 25%">
-                            <label>DC</label>
-                            <input type="text" class="form-control form-control-sm" value="<?= $dc ?>">
-                        </div>
-                        <div class="col-md-4  input-ra" style="float: left; width: 35%">
-                            <label>Solicitante</label>
-                            <input type="text" class="form-control form-control-sm" value="<?= $dc ?>">
-                        </div>
-                        <div class="col-md-10  input-ra" style="float: right; width: 34%">
-                            <label>Empresa</label>
-                            <input type="text" class="form-control form-control-sm" value="<?= $dc ?>">
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="col-md-10 input-ra" style="width: 100%; margin: auto">
-                            <label>Motivo</label>
-                            <textarea class="form-control form-control-sm rounded-0">teste</textarea>   
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="col-md-10 input-ra" style="width: 100%; margin: auto">
-                            <label>Serviço</label>
-                            <textarea class="form-control form-control-sm">teste</textarea>   
-                        </div>
-                    </div>
-                </div>
-                    
-
-                <!--
-                <div class="">
-                            <button type="button" class="btn btn-secondary">Cancel</button>
-                            <button type="button" class="btn btn-primary">Confirm</button>
-                </div>
-                 <div class="col-md-3"  style="float: right; width: 50%">
-                                <label>Data</label>
-                                <input type="text" class="form-control" value="<?= date('d/m/Y', time()); ?>">
-                    </div>
-                 -->
                </div>
         </body>
 </html>
