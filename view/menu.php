@@ -10,7 +10,9 @@
     <meta name="keywords" content="au theme template">
 
     <!-- Title Page-->
-    <title>Dashboard</title>
+    <title>SGD - Sistema de Gerenciamento de Data Center</title>
+
+    <link rel = "shortcut icon" type = "imagem/x-icon" href = "../assets/images/icon/Icon SGD (Branco).ico"/>
 
 
     <!-- Fontfaces CSS-->
@@ -201,7 +203,7 @@
             <div class="logo">
                 <!-- <a href="dashboard.php"> -->
                 <a href="acessos.php">
-                    <img src="../assets/images/npo-sistemi.png" alt="Cool Admin" />
+                    <img src="../assets/images/LogoSGD.Vertical.1129x500.1.png" alt="Cool Admin" />
                 </a>
             </div>
             <div class="menu-sidebar__content js-scrollbar1">
