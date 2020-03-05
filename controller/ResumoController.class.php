@@ -107,7 +107,7 @@ class ResumoController{
 								<th>Data</th>
 								<th>Turno</th>
 								<th>Operador</th>
-								<th style="min-width: 820px;">Resumo</th>
+								<th style="min-width: 800px;">Resumo</th>
 								<th>Actions</th>
 							</tr>
 						</thead>
@@ -228,7 +228,7 @@ class ResumoController{
 								<th>Data</th>
 								<th>Turno</th>
 								<th>Operador</th>
-								<th style="min-width: 820px;">Resumo</th>
+								<th style="min-width: 800px;">Resumo</th>
 								<th>Actions</th>
 							</tr>
 						</thead>
